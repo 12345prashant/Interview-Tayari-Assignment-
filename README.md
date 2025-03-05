@@ -16,12 +16,14 @@ Project Live Link: https://interview-tayari-assignment-frontend.onrender.com/
 
 4. inside .env put following keys -> 
 MONGO_URI=mongodb+srv://sahiltripathi03:XQo5Fn521R9LSCVx@interviewtayari-db.hnns5.mongodb.net/?retryWrites=true&w=majority&appName=interviewTayari-db
+
+
 JWT_SECRET=prashant
 
-5. Run -> 
+6. Run -> 
 npm install
 
-6. Start Backend server -> 
+7. Start Backend server -> 
 npx nodemon index.js
 
 # SET UP Frontend
