@@ -71,7 +71,7 @@ function MockTestPage() {
         } catch (error) {
             console.error("Error getting feedback:", error);
         }finally {
-            // Reset loading for this specific question
+            // Reset loading 
             setLoading((prev) => ({ ...prev, [questionId]: false }));
         }
     };

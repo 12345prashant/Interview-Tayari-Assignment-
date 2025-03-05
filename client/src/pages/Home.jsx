@@ -89,7 +89,7 @@ Ensure the JSON is properly formatted and contains no extra text outside the JSO
 
 
 
-      // Navigate to /{mockId} after successful creation
+      // Navigate to mockId page 
       navigate(`/${res.data.mockTest.mockId}`);
     } catch (err) {
       alert(err.response?.data?.error || "Something went wrong");
@@ -123,7 +123,7 @@ Ensure the JSON is properly formatted and contains no extra text outside the JSO
       <h1 className="text-4xl font-extrabold text-gray-800 text-center mb-8">Start Your SQL Learning</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Card to create new mock test */}
+        {/* card for add new sql kit  */}
         <div
           className="bg-white bg-opacity-80 shadow-lg backdrop-blur-lg rounded-lg flex flex-col items-center justify-center p-8 cursor-pointer hover:shadow-2xl transition transform hover:scale-105"
           onClick={() => setShowModal(true)}

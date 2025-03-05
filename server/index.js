@@ -10,14 +10,14 @@ const app = express();
 // app.use(cors({ origin: "*", credentials: true }));
 app.use(cors({
   origin: (origin, callback) => {
-    callback(null, origin || "*"); // Allows any origin dynamically
+    callback(null, origin || "*"); 
   },
   credentials: true,
 }));
 app.use(express.json());
 app.use(cookieParser());
 
-// Connect to MongoDB
+// MONGO DB CONNECTION 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -34,7 +34,7 @@ const UserSchema = new mongoose.Schema({
 const User = mongoose.model("User", UserSchema);
 
 
-// Mock Test Schema (Added Here)
+// Mock Test Schema 
 const MockTestSchema = new mongoose.Schema({
     mockId: { type: String, required: true, unique: true }, // Unique Mock Test ID
     totalCTC: { type: Number, required: true }, // User's salary input
@@ -104,7 +104,7 @@ app.get("/auth", (req, res) => {
 });
 
 
-// Create a Mock Test Entry
+//  Mock Test Entry
 app.post("/create-mock", async (req, res) => {
     console.log("Received Headers:", req.headers); // Check headers
     console.log("Received Body:", req.body); // Debug body
@@ -145,7 +145,7 @@ app.post("/create-mock", async (req, res) => {
     }
 });
 
-// Get AI Response for a Given Mock Test ID
+
 app.get("/:mockId", async (req, res) => {
     const { mockId } = req.params;
   
