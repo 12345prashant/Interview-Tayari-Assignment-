@@ -43,11 +43,17 @@ REACT_APP_BASE_URL=http://localhost:5000
 
 # Tech Stack
 Frontend: React  + Tailwind CSS
+
 Backend: Node.js + Express
+
 AI Model: Gemini API (Google’s LLM)
+
 Database: MongoDB
+
 Hosting:
+
 Frontend: Render (Static Web Service)
+
 Backend: Render (Web Service)
 
 # Design Choices
