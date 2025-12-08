@@ -88,9 +88,9 @@ app.post("/login", async (req, res) => {
 });
 
 // Logout Route
-// app.post("/logout", (req, res) => {
-//   res.clearCookie("token").json({ message: "Logged out" });
-// });
+app.post("/logout", (req, res) => {
+  res.clearCookie("token").json({ message: "Logged out" });
+});
 
 // Authentication Check Route
 app.get("/auth", (req, res) => {
