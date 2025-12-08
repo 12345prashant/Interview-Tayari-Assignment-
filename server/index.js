@@ -74,18 +74,18 @@ app.post("/signup", async (req, res) => {
 });
 
 // Login Route
-app.post("/login", async (req, res) => {
-  const { email, password } = req.body;
-  const user = await User.findOne({ email });
-  if (!user) return res.status(400).json({ error: "User not found" });
+// app.post("/login", async (req, res) => {
+//   const { email, password } = req.body;
+//   const user = await User.findOne({ email });
+//   if (!user) return res.status(400).json({ error: "User not found" });
 
-  const isMatch = await bcrypt.compare(password, user.password);
-  if (!isMatch) return res.status(400).json({ error: "Invalid credentials" });
+//   const isMatch = await bcrypt.compare(password, user.password);
+//   if (!isMatch) return res.status(400).json({ error: "Invalid credentials" });
 
-  const token = jwt.sign({ id: user._id , email: user.email, name: user.name }, process.env.JWT_SECRET, { expiresIn: "1h" });
-  res.cookie("token", token, { httpOnly: true, sameSite: "strict" })
-     .json({ message: "Login successful", userId: user._id, email: user.email, name: user.name });
-});
+//   const token = jwt.sign({ id: user._id , email: user.email, name: user.name }, process.env.JWT_SECRET, { expiresIn: "1h" });
+//   res.cookie("token", token, { httpOnly: true, sameSite: "strict" })
+//      .json({ message: "Login successful", userId: user._id, email: user.email, name: user.name });
+// });
 
 // Logout Route
 app.post("/logout", (req, res) => {
