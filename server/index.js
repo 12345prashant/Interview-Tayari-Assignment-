@@ -61,7 +61,7 @@ const trackProgressSchema = new mongoose.Schema({
 
 const TrackProgress = mongoose.model("TrackProgress", trackProgressSchema);
 
-// Regis 
+// Regis hib
 app.post("/signup", async (req, res) => {
   const { name, email, password } = req.body;
   const hashedPassword = await bcrypt.hash(password, 10);
