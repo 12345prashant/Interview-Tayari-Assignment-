@@ -87,15 +87,15 @@ app.post("/login", async (req, res) => {
      .json({ message: "Login successful", userId: user._id, email: user.email, name: user.name });
 });
 
-Logout Route
-app.post("/logout", (req, res) => {
-  res.clearCookie("token").json({ message: "Logged out" });
-});
+// Logout Route
+// app.post("/logout", (req, res) => {
+//   res.clearCookie("token").json({ message: "Logged out" });
+// });
 
-// Authentication Check Route
-// app.get("/auth", (req, res) => {
-//   const token = req.cookies.token;
-//   if (!token) return res.status(401).json({ error: "Not authenticated" });
+Authentication Check Route
+app.get("/auth", (req, res) => {
+  const token = req.cookies.token;
+  if (!token) return res.status(401).json({ error: "Not authenticated" });
 
 //   jwt.verify(token, process.env.JWT_SECRET, (err, decoded) => {
 //     if (err) return res.status(401).json({ error: "Invalid token" });
