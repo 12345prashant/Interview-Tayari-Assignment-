@@ -110,10 +110,10 @@ app.post("/create-mock", async (req, res) => {
     console.log("Received Body:", req.body); // Debug body
     console.log("Method:", req.method); // Debug HTTP method
 
-    const {  totalExperience, totalCTC,targetCompany, totalTimeCommitment, aiResponse, userId } = req.body;
-    const aiData = JSON.parse(aiResponse);
-    const questions = aiData.sql_queries; // Extract the 25 SQL questions
-    console.log("Questions ", questions)
+    // const {  totalExperience, totalCTC,targetCompany, totalTimeCommitment, aiResponse, userId } = req.body;
+    // const aiData = JSON.parse(aiResponse);
+    // const questions = aiData.sql_queries; // Extract the 25 SQL questions
+    // console.log("Questions ", questions)
 
     if (!userId) return res.status(400).json({ error: "User ID is required" });
 
