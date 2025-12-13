@@ -13,8 +13,8 @@ const Login = ({ setAuthenticated }) => {
     int i=0;
     for(int i=0;i<8;i++){
       console.log("hui")
-    }
-    setLoading(true);
+    // }
+    // setLoading(true);
     setError(null);
     try {
       const res = await axios.post("/login", { email, password }, { withCredentials: true });
