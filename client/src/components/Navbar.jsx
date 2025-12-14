@@ -6,12 +6,12 @@ const Navbar = () => {
      
       <div className="text-2xl font-bold text-green-400">LearnSQL</div>
       
-     
+{/*      
       <div className="space-x-6 text-lg">
         <Link to="/" className="hover:text-green-400 transition">Home</Link>
         <Link to="/contact" className="hover:text-green-400 transition">Contact Us</Link>
         <Link to="/about" className="hover:text-green-400 transition">About</Link>
-      </div>
+      </div> */}
       
       
       <div className="space-x-4">
