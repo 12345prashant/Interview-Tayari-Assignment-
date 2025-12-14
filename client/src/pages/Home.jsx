@@ -11,12 +11,12 @@ const Home = () => {
   const [mockTests, setMockTests] = useState([]);
   const navigate = useNavigate();
 
-  // const [formData, setFormData] = useState({
-  //   experience: "",
-  //   ctc: "",
-  //   targetCompany: "Startup",
-  //   timeCommitment: "",
-  // });
+  const [formData, setFormData] = useState({
+    experience: "",
+    ctc: "",
+    targetCompany: "Startup",
+    timeCommitment: "",
+  });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
