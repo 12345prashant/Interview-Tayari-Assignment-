@@ -103,8 +103,8 @@ function MockTestPage() {
     //         </div>
 
     //         <div className="max-w-3xl w-full">
-                <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
-                    Great {username}, Here is your AI-curated SQL Plan
+                // <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
+                //     Great {username}, Here is your AI-curated SQL Plan
                 </h1>
 
                 {/* Learning Plan */}
