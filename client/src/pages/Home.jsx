@@ -18,12 +18,12 @@ const Home = () => {
     timeCommitment: "",
   });
 
-  const handleChange = (e) => {
-    // setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   // setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
     setLoading(true);
 
     console.log("Form Data:", formData);
