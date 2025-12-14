@@ -95,14 +95,14 @@ function MockTestPage() {
     const filteredQuestions = filterLevel === "All" ? questions : questions.filter(q => q.level === filterLevel);
     const uniqueLevels = [...new Set(questions.map(q => q.level))];
 
-    return (
-        <div className="min-h-screen bg-gray-100 flex justify-center p-6 relative ">
-            {/* Progress Counter */}
-            <div className="absolute top-6 right-6 w-20 h-20 flex items-center justify-center bg-blue-500 text-white text-xl font-bold rounded-full shadow-md">
-                {questions.filter((q) => q.questionStatus === "done").length} / {questions.length}
-            </div>
+    // return (
+    //     <div className="min-h-screen bg-gray-100 flex justify-center p-6 relative ">
+    //         {/* Progress Counter */}
+    //         <div className="absolute top-6 right-6 w-20 h-20 flex items-center justify-center bg-blue-500 text-white text-xl font-bold rounded-full shadow-md">
+    //             {questions.filter((q) => q.questionStatus === "done").length} / {questions.length}
+    //         </div>
 
-            <div className="max-w-3xl w-full">
+    //         <div className="max-w-3xl w-full">
                 <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
                     Great {username}, Here is your AI-curated SQL Plan
                 </h1>
