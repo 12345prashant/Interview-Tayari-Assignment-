@@ -14,12 +14,12 @@
 //     setLoading(true);
 //     setError(null);
 //     try {
-//       await axios.post(`/signup`, { name, email, password });
-//       navigate("/login");
-//     } catch (err) {
-//       setError(err.response?.data?.error || "Signup failed. Try again.");
-//     } finally {
-//       setLoading(false);
+      await axios.post(`/signup`, { name, email, password });
+      navigate("/login");
+    } catch (err) {
+      setError(err.response?.data?.error || "Signup failed. Try again.");
+    } finally {
+      setLoading(false);
 //     }
 //   };
 
