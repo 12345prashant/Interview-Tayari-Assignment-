@@ -18,10 +18,10 @@ const Login = ({ setAuthenticated }) => {
     setError(null);
     try {
       const res = await axios.post("/login", { email, password }, { withCredentials: true });
-      localStorage.setItem("userId", res.data.userId);
-      localStorage.setItem("email", res.data.email);
-      localStorage.setItem("name", res.data.name);
-      setAuthenticated(true);
+      // localStorage.setItem("userId", res.data.userId);
+      // localStorage.setItem("email", res.data.email);
+      // localStorage.setItem("name", res.data.name);
+      // setAuthenticated(true);
       navigate("/");
     } catch (err) {
       setError(err.response?.data?.error || "Login failed. Please try again.");
