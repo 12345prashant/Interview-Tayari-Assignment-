@@ -38,11 +38,11 @@ const Login = ({ setAuthenticated }) => {
     <div className="h-screen flex justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-600">
       <div className="p-8 bg-white rounded-lg shadow-lg w-96">
         <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Welcome Back</h2>
-        {/* {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
+        {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
         <input
           type="email"
           placeholder="Email"
-          className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none" */}
+          className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none"
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
