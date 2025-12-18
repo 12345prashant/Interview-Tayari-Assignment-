@@ -23,10 +23,10 @@ const Home = () => {
   // };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+    // e.preventDefault();
+    // setLoading(true);
 
-    console.log("Form Data:", formData);
+    // console.log("Form Data:", formData);
 
     const InputPrompt = `Relevant experience: ${formData.experience}, 
 Current CTC in INR: ${formData.ctc}, 
