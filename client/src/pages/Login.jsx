@@ -35,9 +35,9 @@ const Login = ({ setAuthenticated }) => {
   };
 
   return (
-    <div className="h-screen flex justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-600">
-      <div className="p-8 bg-white rounded-lg shadow-lg w-96">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Welcome Back</h2>
+    // <div className="h-screen flex justify-center items-center bg-gradient-to-br from-blue-500 to-indigo-600">
+    //   <div className="p-8 bg-white rounded-lg shadow-lg w-96">
+    //     <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">Welcome Back</h2>
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
         <input
           type="email"
