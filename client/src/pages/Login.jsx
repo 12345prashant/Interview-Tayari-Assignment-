@@ -45,10 +45,10 @@ const Login = ({ setAuthenticated }) => {
     //       className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none"
     //       onChange={(e) => setEmail(e.target.value)}
     //     />
-        <input
-          type="password"
-          placeholder="Password"
-          className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none"
+        // <input
+        //   type="password"
+        //   placeholder="Password"
+        //   className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none"
           onChange={(e) => setPassword(e.target.value)}
         />
         <button
