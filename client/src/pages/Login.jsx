@@ -45,16 +45,16 @@ const Login = ({ setAuthenticated }) => {
     //       className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none"
     //       onChange={(e) => setEmail(e.target.value)}
     //     />
-        // <input
-        //   type="password"
-        //   placeholder="Password"
+        <input
+          type="password"
+          placeholder="Password"
         //   className="p-3 border border-gray-300 rounded-md w-full mb-3 focus:ring-2 focus:ring-blue-400 outline-none"
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button
-          onClick={handleLogin}
-          className="bg-blue-600 text-white p-3 rounded-md w-full hover:bg-blue-700 transition"
-          disabled={loading}
+        // <button
+        //   onClick={handleLogin}
+        //   className="bg-blue-600 text-white p-3 rounded-md w-full hover:bg-blue-700 transition"
+        //   disabled={loading}
         >
           {loading ? "Logging in..." : "Login"}
         </button>
